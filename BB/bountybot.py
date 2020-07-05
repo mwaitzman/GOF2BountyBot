@@ -20,7 +20,7 @@ from .bbObjects.bounties import bbBounty, bbBountyConfig
 from .bbObjects.items import bbShip
 from .bbObjects.battles import ShipFight, DuelRequest
 from .scheduling import TimedTask
-from .bbDatabases import bbBountyDB, bbGuildDB, bbUserDB, HeirarchicalCommandsDB
+from .bbDatabases import bbBountyDB, bbGuildDB, bbUserDB, HierarchicalCommandsDB
 from .scheduling import TimedTaskHeap
 from . import bbUtil, ActiveTimedTasks
 
@@ -82,9 +82,9 @@ guildsDB = loadGuildsDB(bbConfig.guildDBPath)
 bountiesDB = loadBountiesDB(bbConfig.bountyDBPath)
 
 # BountyBot commands DB
-bbCommands = HeirarchicalCommandsDB.HeirarchicalCommandsDB()
+bbCommands = HierarchicalCommandsDB.HierarchicalCommandsDB()
 # Commands usable in DMs
-dmCommands = HeirarchicalCommandsDB.HeirarchicalCommandsDB()
+dmCommands = HierarchicalCommandsDB.HierarchicalCommandsDB()
 
 # Do not change these!
 botLoggedIn = False
